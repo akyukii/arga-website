@@ -3,7 +3,7 @@ const Vision = () => {
     <section className="px-6 py-24 border-t border-border">
       <div className="max-w-4xl mx-auto text-center space-y-8">
         <div className="inline-block px-3 py-1 rounded-md bg-accent/50 border border-border">
-          <p className="text-sm font-mono">Long-term vision</p>
+          <p className="text-sm font-mono">What's Next</p>
         </div>
         
         <h2 className="text-3xl md:text-5xl font-bold leading-tight">
@@ -32,9 +32,9 @@ const Vision = () => {
             </p>
           </div>
           <div className="space-y-2">
-            <p className="font-mono text-sm text-muted-foreground">Heal</p>
+            <p className="font-mono text-sm text-muted-foreground">Fix</p>
             <p className="text-base">
-              Autonomous detection, diagnosis, and remediation of production issues
+              Autonomous detection, diagnosis, and rollback of production issues
             </p>
           </div>
         </div>

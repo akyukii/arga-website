@@ -5,8 +5,7 @@ const Header = () => {
     <header className="fixed top-0 w-full z-50 border-b border-white/10 bg-black">
       <nav className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-md bg-white" />
-          <span className="text-xl font-bold text-white">Arga Labs</span>
+          <img src="/logo_black.png" alt="ArgaLabs" className="h-40 w-auto" />
         </div>
         
         <div className="hidden md:flex items-center gap-8">

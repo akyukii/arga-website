@@ -8,11 +8,11 @@ const Problem = () => {
               <p className="text-sm font-mono text-destructive">The problem</p>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold">
-              Most companies have nothing
+              Incident response is slow
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Even at Google, internal tooling for post-deployment analysis is slow, inaccurate, 
-              and provides almost no context. Smaller teams are flying completely blind.
+              Even at Google, internal tooling for post-deployment analysis is slow
+              and provides almost no context. Smaller teams are flying completely blind. We automate it.
             </p>
           </div>
           
@@ -24,8 +24,8 @@ const Problem = () => {
               Instant root cause analysis
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Automated workflows analyze your deployment timeline, correlate failures with code changes, 
-              and suggest targeted rollbacks or fixes—all within seconds of an incident.
+              Automated workflows analyze your deployment timeline, correlate failures with PRs, 
+              and suggest targeted rollbacks—all within seconds of an incident.
             </p>
           </div>
         </div>
