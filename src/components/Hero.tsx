@@ -22,13 +22,10 @@ const Hero = () => {
           analyzes diffs and logs, and pinpoints the culprit—often before your on-call engineer wakes up.
         </p>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+        <div className="flex justify-center pt-4">
           <Button size="lg" className="text-base group">
             Request early access
             <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-          </Button>
-          <Button size="lg" variant="outline" className="text-base">
-            Watch demo
           </Button>
         </div>
       </div>
