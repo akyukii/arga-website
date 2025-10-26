@@ -42,12 +42,12 @@ const Features = () => {
             return (
               <div 
                 key={index} 
-                className="group p-8 rounded-lg border border-border bg-card hover:bg-accent/5 transition-all duration-300"
+                className="group p-8 rounded-lg border border-border bg-card hover:bg-white transition-all duration-300"
               >
-                <div className="mb-4 inline-flex p-3 rounded-lg bg-primary/10 border border-primary/20">
-                  <Icon className="h-6 w-6" />
+                <div className="mb-4 inline-flex p-3 rounded-lg bg-white/10 border border-white/20 group-hover:bg-black/10 group-hover:border-black/20 transition-all duration-300">
+                  <Icon className="h-6 w-6 text-white group-hover:text-black transition-colors duration-300" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
+                <h3 className="text-xl font-semibold mb-3 text-white group-hover:text-black transition-colors duration-300">{feature.title}</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   {feature.description}
                 </p>
