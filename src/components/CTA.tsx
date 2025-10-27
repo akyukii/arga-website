@@ -26,10 +26,6 @@ const CTA = () => {
             <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
           </Button>
         </form>
-        
-        <p className="text-sm text-muted-foreground pt-4">
-          We'll reach out within 48 hours to schedule your onboarding
-        </p>
       </div>
     </section>
   );
