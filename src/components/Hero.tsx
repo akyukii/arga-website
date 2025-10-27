@@ -23,9 +23,11 @@ const Hero = () => {
         </p>
         
         <div className="flex justify-center pt-4">
-          <Button size="lg" className="text-base group bg-black text-white hover:bg-black/90 border border-white/20">
-            Request early access
-            <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+          <Button size="lg" className="text-base group bg-black text-white hover:bg-black/90 border border-white/20" asChild>
+            <a href="#cta">
+              Request early access
+              <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+            </a>
           </Button>
         </div>
       </div>
