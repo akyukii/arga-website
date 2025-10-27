@@ -20,7 +20,11 @@ const Header = () => {
           </a>
         </div>
         
-        <Button size="sm">Request access</Button>
+        <a href="#cta">
+          <Button size="sm" asChild={true}>
+            <span>Request access</span>
+          </Button>
+        </a>
       </nav>
     </header>
   );

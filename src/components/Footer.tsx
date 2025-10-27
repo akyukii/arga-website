@@ -11,10 +11,10 @@ const Footer = () => {
             <a href="#" className="hover:text-foreground transition-colors">
               Twitter
             </a>
-            <a href="#" className="hover:text-foreground transition-colors">
+            <a href="https://www.linkedin.com/company/arga-labs" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
               LinkedIn
             </a>
-            <a href="#" className="hover:text-foreground transition-colors">
+            <a href="#cta" className="hover:text-foreground transition-colors">
               Contact
             </a>
           </div>
