@@ -1,6 +1,6 @@
 const Vision = () => {
   return (
-    <section className="px-6 py-24 border-t border-border">
+    <section id="vision" className="scroll-mt-20 px-6 py-24 border-t border-border">
       <div className="max-w-4xl mx-auto text-center space-y-8">
         <div className="inline-block px-3 py-1 rounded-md bg-accent/50 border border-border">
           <p className="text-sm font-mono">What's Next</p>
@@ -22,7 +22,7 @@ const Vision = () => {
           <div className="space-y-2">
             <p className="font-mono text-sm text-muted-foreground">Version</p>
             <p className="text-base">
-              Every agent behavior, prompt, and model version tracked and revertible
+              Every code change from an agent is version tracked and revertible
             </p>
           </div>
           <div className="space-y-2">

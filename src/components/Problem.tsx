@@ -1,6 +1,6 @@
 const Problem = () => {
   return (
-    <section className="px-6 py-24 border-t border-border">
+    <section id="product" className="scroll-mt-20 px-6 py-24 border-t border-border">
       <div className="max-w-5xl mx-auto">
         <div className="grid md:grid-cols-2 gap-16">
           <div className="space-y-6">
