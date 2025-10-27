@@ -21,7 +21,7 @@ const CTA = () => {
             placeholder="your@email.com"
             className="flex-1 h-12 px-4"
           />
-          <Button size="lg" type="submit" className="group">
+          <Button variant="ghost" size="lg" type="submit" className="group border border-border hover:bg-black hover:text-white">
             Get access
             <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
           </Button>
