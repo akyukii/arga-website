@@ -4,7 +4,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center gap-2">
-            <img src="/logo_white.png" alt="ArgaLabs" className="h-6 w-auto" />
+            <img src="/logo_white.png?v=2" alt="ArgaLabs" className="h-6 w-auto" />
           </div>
           
           <div className="flex gap-8 text-sm text-muted-foreground">
