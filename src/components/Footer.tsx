@@ -5,20 +5,19 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center gap-2">
             <img src="/logo_white.png?v=2" alt="ArgaLabs" className="h-6 w-auto" />
+            <div className="ml-4 flex gap-6 text-sm text-muted-foreground">
+              <a href="#" className="hover:text-foreground transition-colors">
+                Twitter
+              </a>
+              <a href="https://www.linkedin.com/company/arga-labs" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
+                LinkedIn
+              </a>
+              <a href="mailto:philip@argalabs.com,akira@argalabs.com" className="hover:text-foreground transition-colors">
+                Contact
+              </a>
+            </div>
           </div>
-          
-          <div className="flex gap-8 text-sm text-muted-foreground">
-            <a href="#" className="hover:text-foreground transition-colors">
-              Twitter
-            </a>
-            <a href="https://www.linkedin.com/company/arga-labs" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
-              LinkedIn
-            </a>
-            <a href="#cta" className="hover:text-foreground transition-colors">
-              Contact
-            </a>
-          </div>
-          
+
           <p className="text-sm text-muted-foreground">
             © 2025 Arga Labs. All rights reserved.
           </p>
