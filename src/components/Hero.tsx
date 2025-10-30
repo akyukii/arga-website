@@ -7,19 +7,18 @@ const Hero = () => {
       <div className="max-w-5xl mx-auto text-center space-y-8">
         <div className="inline-block px-4 py-2 rounded-full bg-black border border-white/20">
           <p className="text-sm font-mono text-white">
-            Automated failure analysis for production systems
+            Expanding the Frontier  of Agentic Systems
           </p>
         </div>
         
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter">
-          Fix production before
+        <h1 className="text-4xl md:text-4xl lg:text-7xl font-bold tracking-tighter">
+          AI-Centric Control Layer
           <br />
-          you get paged
+          for Agentic Systems
         </h1>
         
         <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-          When something breaks after deployment, Arga automatically correlates failures with recent PRs, 
-          analyzes diffs and logs, and pinpoints the culprit—often before your on-call engineer wakes up.
+        AI can write code. Arga helps it ship. We handle versioning, context, and debugging so agentic systems can help teams move from prototypes to production faster than ever.
         </p>
         
         <div className="flex justify-center pt-4">

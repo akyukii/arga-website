@@ -4,22 +4,26 @@ const features = [
   {
     icon: Terminal,
     title: "Agentic failure analysis",
-    description: "AI workflows automatically correlate latency spikes and errors with recent PRs, analyzing diffs, logs, and dependencies to pinpoint root causes.",
+    description:
+      "Arga continuously monitors latency spikes, errors, and anomalies across your stack—correlating them with recent PRs, code diffs, and dependency shifts to surface true root causes in minutes.",
   },
   {
     icon: GitBranch,
     title: "Intelligent rollback suggestions",
-    description: "Get minimal, targeted rollback options or fix suggestions based on deep analysis of your deployment timeline and code changes.",
+    description:
+      "When production breaks, Arga identifies the minimal set of PRs responsible and auto-generates rollback or patch suggestions that can be safely tested before merge.",
   },
   {
     icon: Network,
-    title: "Agent observability",
-    description: "Lightweight SDK logs every agent run—inputs, outputs, model versions, tool calls, latency, and cost—with automatic versioning.",
+    title: "Dynamic context graph",
+    description:
+      "A constantly updating knowledge graph that maps files, diffs, runtime logs, and service dependencies—ensuring agents always reason with fresh, relevant information.",
   },
   {
     icon: Shield,
-    title: "Context & guardrails",
-    description: "Shared context across agent workflows with built-in safety: cost caps, tool allowlists, and behavior enforcement.",
+    title: "Pre-deployment test environments",
+    description:
+      "For each PR, Arga spins an isolated sandbox mirroring production. It runs synthetic tests, traces, and integration checks so you can validate behavior before merge—no surprises post-deploy.",
   },
 ];
 
