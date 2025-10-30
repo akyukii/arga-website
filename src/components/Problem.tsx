@@ -79,13 +79,13 @@ const Problem = ({ items = defaultItems, autoAdvanceMs = 4000 }: ProblemProps) =
           </CarouselContent>
           <CarouselPrevious
             variant="ghost"
-            className="opacity-0 hover:opacity-100 focus:opacity-100 transition-opacity duration-200 bg-background/80 text-foreground border border-white/20 hover:bg-background/80"
+            className="bg-transparent text-black hover:!bg-black hover:!text-white border-0 transition-colors"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           />
           <CarouselNext
             variant="ghost"
-            className="opacity-0 hover:opacity-100 focus:opacity-100 transition-opacity duration-200 bg-background/80 text-foreground border border-white/20 hover:bg-background/80"
+            className="bg-transparent text-black hover:!bg-black hover:!text-white border-0 transition-colors"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           />
