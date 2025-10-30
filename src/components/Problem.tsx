@@ -39,7 +39,7 @@ const Problem = ({ items = defaultItems, autoAdvanceMs = 4000 }: ProblemProps) =
   return (
     <section id="product" className="scroll-mt-20 px-6 py-24 border-t border-border">
       <div className="max-w-5xl mx-auto">
-        <div className="hidden md:grid md:grid-cols-2 gap-16">
+        <div className="grid grid-cols-2 gap-4 md:gap-16">
           <div className="space-y-6">
             <div className="inline-block px-3 py-1 rounded-md bg-destructive/10 border border-destructive/20">
               <p className="text-sm font-mono text-destructive">The problem</p>
@@ -58,9 +58,6 @@ const Problem = ({ items = defaultItems, autoAdvanceMs = 4000 }: ProblemProps) =
               <CarouselItem key={idx}>
                 <div className="grid md:grid-cols-2 gap-16">
                   <div className="space-y-6">
-                    <div className="md:hidden inline-block px-3 py-1 rounded-md bg-destructive/10 border border-destructive/20">
-                      <p className="text-sm font-mono text-destructive">The problem</p>
-                    </div>
                     <h2 className="text-3xl md:text-4xl font-bold">
                       {item.problemTitle}
                     </h2>
@@ -69,9 +66,6 @@ const Problem = ({ items = defaultItems, autoAdvanceMs = 4000 }: ProblemProps) =
                     </p>
                   </div>
                   <div className="space-y-6">
-                    <div className="md:hidden inline-block px-3 py-1 rounded-md bg-green-200 border border-green-700">
-                      <p className="text-sm font-mono text-green-700">With Arga</p>
-                    </div>
                     <h2 className="text-3xl md:text-4xl font-bold">
                       {item.solutionTitle}
                     </h2>
