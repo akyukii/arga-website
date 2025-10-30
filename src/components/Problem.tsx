@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Carousel, CarouselContent, CarouselItem, type CarouselApi } from "@/components/ui/carousel";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, type CarouselApi } from "@/components/ui/carousel";
 
 type ProblemItem = {
   problemTitle: string;
@@ -26,14 +26,15 @@ const defaultItems: ProblemItem[] = [
 
 const Problem = ({ items = defaultItems, autoAdvanceMs = 6000 }: ProblemProps) => {
   const [emblaApi, setEmblaApi] = React.useState<CarouselApi | null>(null);
+  const [isHovered, setIsHovered] = React.useState(false);
 
   React.useEffect(() => {
-    if (!emblaApi) return;
+    if (!emblaApi || isHovered) return;
     const id = setInterval(() => {
       emblaApi.scrollNext();
     }, Math.max(2500, autoAdvanceMs));
     return () => clearInterval(id);
-  }, [emblaApi, autoAdvanceMs]);
+  }, [emblaApi, autoAdvanceMs, isHovered]);
 
   return (
     <section id="product" className="scroll-mt-20 px-6 py-24 border-t border-border">
@@ -50,7 +51,7 @@ const Problem = ({ items = defaultItems, autoAdvanceMs = 6000 }: ProblemProps) =
             </div>
           </div>
         </div>
-        <div className="mt-6">
+        <div className="mt-6" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
           <Carousel setApi={setEmblaApi} opts={{ loop: true }}>
           <CarouselContent>
             {items.map((item, idx) => (
@@ -76,6 +77,14 @@ const Problem = ({ items = defaultItems, autoAdvanceMs = 6000 }: ProblemProps) =
               </CarouselItem>
             ))}
           </CarouselContent>
+          <CarouselPrevious 
+            variant="ghost" 
+            className="bg-background/80 text-foreground border border-white/20 hover:bg-background/80" 
+          />
+          <CarouselNext 
+            variant="ghost" 
+            className="bg-background/80 text-foreground border border-white/20 hover:bg-background/80" 
+          />
           </Carousel>
         </div>
       </div>
