@@ -24,7 +24,7 @@ const defaultItems: ProblemItem[] = [
   },
 ];
 
-const Problem = ({ items = defaultItems, autoAdvanceMs = 6000 }: ProblemProps) => {
+const Problem = ({ items = defaultItems, autoAdvanceMs = 4000 }: ProblemProps) => {
   const [emblaApi, setEmblaApi] = React.useState<CarouselApi | null>(null);
   const [isHovered, setIsHovered] = React.useState(false);
 
@@ -51,7 +51,7 @@ const Problem = ({ items = defaultItems, autoAdvanceMs = 6000 }: ProblemProps) =
             </div>
           </div>
         </div>
-        <div className="mt-6" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+        <div className="mt-6">
           <Carousel setApi={setEmblaApi} opts={{ loop: true }}>
           <CarouselContent>
             {items.map((item, idx) => (
@@ -77,13 +77,17 @@ const Problem = ({ items = defaultItems, autoAdvanceMs = 6000 }: ProblemProps) =
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious 
-            variant="ghost" 
-            className="bg-background/80 text-foreground border border-white/20 hover:bg-background/80" 
+          <CarouselPrevious
+            variant="ghost"
+            className="opacity-0 hover:opacity-100 focus:opacity-100 transition-opacity duration-200 bg-background/80 text-foreground border border-white/20 hover:bg-background/80"
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
           />
-          <CarouselNext 
-            variant="ghost" 
-            className="bg-background/80 text-foreground border border-white/20 hover:bg-background/80" 
+          <CarouselNext
+            variant="ghost"
+            className="opacity-0 hover:opacity-100 focus:opacity-100 transition-opacity duration-200 bg-background/80 text-foreground border border-white/20 hover:bg-background/80"
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
           />
           </Carousel>
         </div>
