@@ -11,7 +11,7 @@ const testimonials: Testimonial[] = [
   {
     quote:
       "Our models are often trained in-house with a lot of pre-defined context, for example, if one window has 180k tokens, up to 120k can already be defined before you open the agent tab window, meaning you'd only have 60k window to work with.",
-    author: "Software Engineer",
+    author: "Senior Software Engineer",
     title: "Amazon",
     company: "AWS",
   },
