@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Problem from "@/components/Problem";
+import Testimonials from "@/components/Testimonials";
 import Features from "@/components/Features";
 import Vision from "@/components/Vision";
 import CTA from "@/components/CTA";
@@ -9,7 +10,7 @@ import Footer from "@/components/Footer";
 const Index = () => {
   const problemItems = [
     {
-      problemTitle: "Context gaps lead to hallucinations",
+      problemTitle: "Context limitations lead to hallucinations",
       problemDescription:
         "AI agents operate with fragmented context—limited windows and no sense of priority, causing hallucinations and incomplete reasoning across large codebases.",
       solutionTitle: "Dynamic, prioritized context graph",
@@ -35,10 +36,10 @@ const Index = () => {
     {
       problemTitle: "Slow incident triage, high cognitive load",
       problemDescription:
-        "Oncall must reconstruct timelines, dependencies, and impacts from scratch across microservices.",
+        "Oncall must have a holistic view of the system to react to incidents quickly. Without a unified view, they must identify all possible paths of the alerts to pinpoint the root cause.",
       solutionTitle: "Change-aware incident timelines",
       solutionDescription:
-        "Arga links alerts, logs, metrics, and recent PRs into a single timeline, tracks down the root cause using context gathered from PRs, and proposes minimal rollbacks.",
+        "Arga links alerts, logs, metrics, and recent PRs into a single timeline, tracks down the root cause using context gathered from the dynamic context graph, and proposes minimal rollbacks.",
     },
   ];
   return (
@@ -47,6 +48,7 @@ const Index = () => {
       <main className="pt-16">
         <Hero />
         <Problem items={problemItems} autoAdvanceMs={4000} />
+        <Testimonials />
         <Features />
         <Vision />
         <CTA />

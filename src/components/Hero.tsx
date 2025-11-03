@@ -12,7 +12,7 @@ const Hero = () => {
         </div>
         
         <h1 className="text-4xl md:text-4xl lg:text-7xl font-bold tracking-tighter">
-          AI-Centric Control Layer
+          The DevOps Engineer
           <br />
           for Agentic Systems
         </h1>
