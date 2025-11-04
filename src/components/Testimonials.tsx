@@ -24,7 +24,7 @@ const testimonials: Testimonial[] = [
   },
   {
     quote:
-      "Since the codebase we own is so large, everyone is expected to be available and there's no oncall on our team; if your code caused an issue, you will get pinged and fixed 24/7. It caused a lot of unnecessary stress and burnout.",
+      "Since the codebase we own is so large, everyone is expected to be available and there's no oncall on our team; if your code caused an issue, you will get pinged 24/7. It caused a lot of unnecessary stress and burnout.",
     author: "Software Engineer",
     title: "Tesla",
     company: "Service Platform",
