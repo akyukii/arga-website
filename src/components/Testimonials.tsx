@@ -38,7 +38,7 @@ const testimonials: Testimonial[] = [
   },
   {
     quote:
-      "We're building stuff for post-prod breakages. Still very early but there's a lot of challenges, especially around CI/CD pipelines and tracing errors.",
+      "Our team manages lots of internal platforms and our on-call is crazy. Whenever something breaks it's pretty critical so we gotta fix it fast.",
     author: "Production Engineer",
     title: "Meta",
     company: "Dev Infrastructure",
