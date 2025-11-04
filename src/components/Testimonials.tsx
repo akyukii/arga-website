@@ -17,7 +17,7 @@ const testimonials: Testimonial[] = [
   },
   {
     quote:
-      "A lot of context is missing in our models, I need to provide exact file paths of all relevant files and open them on my IDE to paste into Cursor/agent tab",
+      "A lot of context is missing in our models, I need to provide exact file paths of all relevant files and open them on my IDE to paste into Cursor/agent tab.",
     author: "Software Engineer",
     title: "Google",
     company: "Google Voice",

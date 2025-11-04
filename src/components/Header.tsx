@@ -15,6 +15,9 @@ const Header = () => {
           <a href="#features" className="text-sm text-white/70 hover:text-white transition-colors">
             Features
           </a>
+          <a href="#testimonials" className="text-sm text-white/70 hover:text-white transition-colors">
+            Testimonials
+          </a>
           <a href="#vision" className="text-sm text-white/70 hover:text-white transition-colors">
             Vision
           </a>
