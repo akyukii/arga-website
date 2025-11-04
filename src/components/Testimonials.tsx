@@ -44,7 +44,7 @@ const Testimonials = () => {
       <div className="max-w-5xl mx-auto space-y-10">
         <div className="space-y-3 text-center">
           <h2 className="text-3xl md:text-5xl font-bold">What teams say</h2>
-          <p className="text-lg text-muted-foreground">Real workflows, fewer incidents, higher confidence</p>
+          <p className="text-lg text-muted-foreground">Current pain points in enterprise environments</p>
         </div>
 
         <div className="grid gap-6">
