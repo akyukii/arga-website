@@ -36,6 +36,13 @@ const testimonials: Testimonial[] = [
     title: "Baseten",
     company: "ML Infrastructure",
   },
+  {
+    quote:
+      "We're building stuff for post-prod breakages. Still very early but there's a lot of challenges, especially around CI/CD pipelines and tracing errors.",
+    author: "Production Engineer",
+    title: "Meta",
+    company: "Dev Infrastructure",
+  },
 ];
 
 const Testimonials = () => {
