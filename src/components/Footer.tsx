@@ -12,7 +12,7 @@ const Footer = () => {
               <a href="https://www.linkedin.com/company/arga-labs" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
                 LinkedIn
               </a>
-              <a href="mailto:philip@argalabs.com,akira@argalabs.com" className="hover:text-foreground transition-colors">
+              <a href="mailto:phillip@argalabs.com,akira@argalabs.com" className="hover:text-foreground transition-colors">
                 Contact
               </a>
             </div>
