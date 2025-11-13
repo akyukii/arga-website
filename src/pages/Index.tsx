@@ -12,10 +12,10 @@ const Index = () => {
     {
       problemTitle: "Lack of execution-aware validation",
       problemDescription:
-        "AI can write code, but it can't verify what is written. That's why one-click fixes don't work. You're still accountable if the code agents suggests breaks production.",
+        "AI can write code, but it can't verify what is written. That's why one-click fixes don't work. You're still accountable if the agents suggest fixes that break production.",
       solutionTitle: "Pre-deployment testing pipeline",
       solutionDescription:
-        "Arga spins up an isolated environment with read-only Kubernetes and log access, enabling real integration tests, traces, and rollback procedures before code merges to production.",
+        "Arga spins up an isolated environment enabling real integration tests, traces, and rollback procedures before code merges to production. If a metric spikes, Arga rolls back to the safest state before any user impact.",
     },
     {
       problemTitle: "Context limitations lead to hallucinations",
