@@ -7,11 +7,11 @@ const CTA = () => {
     <section id="cta" className="scroll-mt-20 px-6 py-24 border-t border-border">
       <div className="max-w-3xl mx-auto text-center space-y-8">
         <h2 className="text-3xl md:text-5xl font-bold">
-          Join the early access program
+          Join our alpha program
         </h2>
         
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-          Be among the first to experience automated incident response and agent observability. 
+          Our alpha prototype drops in December 2025. Join our waitlist to get early access.
           Limited spots available.
         </p>
         

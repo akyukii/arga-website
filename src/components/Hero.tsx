@@ -14,11 +14,11 @@ const Hero = () => {
         <h1 className="text-4xl md:text-4xl lg:text-7xl font-bold tracking-tighter">
           The DevOps Engineer
           <br />
-          for Agentic Systems
+          to Kill Oncall
         </h1>
         
         <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-        AI can write code. Arga helps it ship. We handle versioning, context, and debugging so agentic systems can help teams move from prototypes to production faster than ever.
+        One-click fixes don't save you from the 3am pages. Arga does. It's the fully autonomous incident response system that gets rid of oncall.
         </p>
         
         <div className="flex justify-center pt-4">

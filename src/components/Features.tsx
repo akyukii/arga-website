@@ -21,9 +21,9 @@ const features = [
   },
   {
     icon: Shield,
-    title: "Pre-deployment test environments",
+    title: "Fully autonomous incident response",
     description:
-      "For each PR, Arga spins an isolated sandbox mirroring production. It runs synthetic tests, traces, and integration checks so you can validate behavior before merge—no surprises post-deploy.",
+      "For each rollback, Arga spins an isolated sandbox mirroring production. It runs synthetic tests, traces, and integration checks so you can validate behavior before merge—no surprises post-deploy.",
   },
 ];
 
