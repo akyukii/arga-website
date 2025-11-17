@@ -12,7 +12,7 @@ const Hero = () => {
         </div>
         
         <h1 className="text-4xl md:text-4xl lg:text-7xl font-bold tracking-tighter">
-          The DevOps Engineer
+          The AI DevOps Engineer
           <br />
           to Kill Oncall
         </h1>
