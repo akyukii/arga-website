@@ -21,7 +21,7 @@ const Header = () => {
         </div>
         
         <Button size="sm" asChild>
-          <a href="#cta">Request access</a>
+          <a href="https://login.argalabs.com">Login</a>
         </Button>
       </nav>
     </header>
