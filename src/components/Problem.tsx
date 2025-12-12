@@ -41,13 +41,13 @@ const Problem = ({ items = defaultItems, autoAdvanceMs = 4000 }: ProblemProps) =
       <div className="max-w-5xl mx-auto">
         <div className="grid grid-cols-2 gap-4 md:gap-16">
           <div className="space-y-6">
-            <div className="inline-block px-3 py-1 rounded-md bg-destructive/10 border border-destructive/20">
-              <p className="text-sm font-mono text-destructive">The problem</p>
+            <div className="inline-block px-3 py-1 rounded-md bg-red-200 border border-red-700 dark:bg-red-500/20 dark:border-red-500/40">
+              <p className="text-lg font-mono text-red-700 dark:text-red-300">The problem</p>
             </div>
           </div>
           <div className="space-y-6">
-            <div className="inline-block px-3 py-1 rounded-md bg-green-200 border border-green-700">
-              <p className="text-sm font-mono text-green-700">With Arga</p>
+            <div className="inline-block px-3 py-1 rounded-md bg-green-200 border border-green-700 dark:bg-green-500/20 dark:border-green-500/40">
+              <p className="text-lg font-mono text-green-700 dark:text-green-300">With Arga</p>
             </div>
           </div>
         </div>
@@ -79,13 +79,13 @@ const Problem = ({ items = defaultItems, autoAdvanceMs = 4000 }: ProblemProps) =
           </CarouselContent>
           <CarouselPrevious
             variant="ghost"
-            className="bg-transparent text-black hover:!bg-black hover:!text-white border-0 transition-colors"
+            className="bg-transparent text-foreground hover:!bg-foreground hover:!text-background border-0 transition-colors"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           />
           <CarouselNext
             variant="ghost"
-            className="bg-transparent text-black hover:!bg-black hover:!text-white border-0 transition-colors"
+            className="bg-transparent text-foreground hover:!bg-foreground hover:!text-background border-0 transition-colors"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           />

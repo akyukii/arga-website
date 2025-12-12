@@ -7,6 +7,7 @@ import { supabase } from "@/lib/supabase";
 
 const CTA = () => {
   const [email, setEmail] = useState("");
+  const [company, setCompany] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
@@ -26,7 +27,12 @@ const CTA = () => {
     try {
       const { error } = await supabase
         .from("waitlist")
-        .insert({ emaill: email.trim() });
+        .insert([
+          {
+            email: email.trim(),
+            company: company.trim() || null,
+          },
+        ]);
 
       if (error) throw error;
 
@@ -35,6 +41,7 @@ const CTA = () => {
         description: "Thanks for joining the waitlist.",
       });
       setEmail("");
+      setCompany("");
     } catch (err) {
       console.error("Waitlist submission failed", err);
       toast({
@@ -48,29 +55,39 @@ const CTA = () => {
   };
 
   return (
-    <section id="cta" className="scroll-mt-20 px-6 py-24 border-t border-border">
+    <section id="cta" className="scroll-mt-20 px-6 py-48 border-t border-border">
       <div className="max-w-3xl mx-auto text-center space-y-8">
         <h2 className="text-3xl md:text-5xl font-bold">
           Join our alpha program
         </h2>
         
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-          Our alpha prototype drops in December 2025. Join our waitlist to get early access.
-          Limited spots available.
+          Our alpha prototype drops in Jan 2026. Join our waitlist to get early access.
         </p>
         
         <form
           className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto pt-4"
           onSubmit={handleSubmit}
         >
-          <Input 
-            type="email" 
-            placeholder="your@email.com"
-            className="flex-1 h-12 px-4"
-            value={email}
-            onChange={(event) => setEmail(event.target.value)}
-            required
-          />
+          <div className="flex flex-col gap-2 flex-1">
+            <Input
+              type="email"
+              placeholder="your@email.com"
+              className="h-12 px-4"
+              value={email}
+              onChange={(event) => setEmail(event.target.value)}
+              required
+            />
+            <div className="text-left">
+              <Input
+                type="text"
+                placeholder="Company Name (optional)"
+                className="h-12 px-4"
+                value={company}
+                onChange={(e) => setCompany(e.target.value)}
+              />
+            </div>
+          </div>
           <Button
             variant="ghost"
             size="lg"

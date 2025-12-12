@@ -43,13 +43,13 @@ const Index = () => {
     },
   ];
   return (
-    <div className="dark min-h-screen">
+    <div className="min-h-screen bg-white text-neutral-900 dark:bg-black dark:text-neutral-50">
       <Header />
       <main className="pt-16">
         <Hero />
         <Problem items={problemItems} autoAdvanceMs={4000} />
-        <Testimonials />
         <Features />
+        <Testimonials />
         <CTA />
       </main>
       <Footer />
