@@ -1,10 +1,15 @@
+import { useTheme } from "@/context/theme-provider";
+
 const Footer = () => {
+  const { theme } = useTheme();
+  const logo = theme === "light" ? "/logo_white.png" : "/black_header.jpg";
+
   return (
     <footer className="border-t border-border px-6 py-12">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center gap-2">
-            <img src="/logo_white.png?v=2" alt="ArgaLabs" className="h-6 w-auto" />
+            <img src={logo} alt="Arga Labs" className="h-6 w-auto" />
             <div className="ml-4 flex gap-6 text-sm text-muted-foreground">
               <a href="https://x.com/ArgaLabs" className="hover:text-foreground transition-colors">
                 X (Twitter)
